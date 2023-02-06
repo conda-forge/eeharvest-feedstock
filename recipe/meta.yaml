@@ -1,5 +1,5 @@
 {% set name = "eeharvest" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/eeharvest-{{ version }}.tar.gz
-  sha256: 757d654726b4d53c6d122d3acc99ba8d13bb95a2734fb20552eba575540643b4
+  sha256: 4d0e045a3d2d1977bcd7656adb1806de4b70a49cb4e8fc881ad7377496b02e61
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
